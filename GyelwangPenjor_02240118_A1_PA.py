@@ -7,7 +7,7 @@ def prime_number(n):
     return True
 
 def Sum_of_prime_number():
-    try:
+
         first_number = int(input(" Number starting from: "))
         second_number = int(input("Number ending at : "))
         sum = 0
@@ -15,11 +15,10 @@ def Sum_of_prime_number():
             if prime_number(i):
                 sum += i
         print(f"Sum of all prime numbers in the above listed range [{first_number} - {second_number}] are: ", sum)
-    except ValueError:
-        print("Invalid input. Please enter valid integers.")
+    
 
 def unit_converter():
-    try:
+    
         print("1. Meter")
         print("2. Feet")
         player = int(input("Enter 1 for meter to feet or 2 for feet to meter: "))
@@ -32,8 +31,7 @@ def unit_converter():
             print(f'Your unit in meter is: {feet}')
         else:
             print("Invalid choice. Please enter 1 or 2.")
-    except ValueError:
-        print("Invalid input. Please enter valid numbers.")
+  
 
 def consonant_counter():
     word = input("Enter a word: ")
@@ -64,9 +62,9 @@ def palindrome_checker():
     player = input("Enter a Word: ")
     player1 = player[::-1]
     if player == player1:
-        print(f'{player1} is a palindrome')
+        print(f'{player1} is a Palindrome')
     else:
-        print(f"{player} is not a palindrome")
+        print(f"{player} is not a Palindrome")
 
 def word_counter():
     word_list = ["the","was","and"]
